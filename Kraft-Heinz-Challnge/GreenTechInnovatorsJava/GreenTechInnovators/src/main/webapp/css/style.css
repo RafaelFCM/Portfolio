@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";
+
+:root {
+    --yellow: #FBC201;
+    --red: #E31D1A;
+    --cream: #FEF6A8;
+    --dark-blue: #203663;
+    --light-blue: #8b9db9;
+
+    --fonte-titulo: playfair display;
+    --fonte-texto: poppins;
+}
+
+/* section {
+    height: 100vh;
+} */
+
+h1 {
+    font-family: var(--fonte-titulo);
+}
+
+p {
+    font-family: var(--fonte-texto);
+}
+
+h2 {
+    font-family: var(--fonte-texto);
+    font-weight: lighter;
+}
+
+.introduction {
+    background-color: var(--light-blue);
+}
+
+.context {
+    background-color: var(--cream);
+}
+
+.form {
+    background-color: var(--light-blue);
+}
+
+.about-us {
+    background-color: var(--cream);
+}
+
+.fa-brands {
+    color: black;
+    /* font-size: 1.5rem; */
+}
