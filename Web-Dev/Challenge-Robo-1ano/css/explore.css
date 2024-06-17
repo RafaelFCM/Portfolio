@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+html {
+    font-size: 62.5%;
+    /* 62,5% de 16px = 10px */
+    /* 1 rem = 10px */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.bg-cor-fundo {
+    background: linear-gradient(#1c0522, #2b1055);
+}
+
+header ul li {
+    list-style: none;
+    line-height: 5rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+#robo {
+    position: fixed;
+    top: 20%;
+    left: -1%;
+    z-index: 1;
+    width: 15vmin;
+    height: 15vmin;
+}
+
+.title {
+    font-size: 10vmin;
+}
+
+.btn-success {
+    font-size: 7vmin;
+    color: #fff;
+}
+
+/* .popup-wrapper {
+    background: rgba(0, 0, 0, .5);
+}
+
+.popup {
+    text-align: center;
+    background: white;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.popup a {
+    color: white;
+    text-decoration: none;
+    background: crimson;
+    padding: 2% 2%;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    font-size: 200%;
+}
+
+.popup-close {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+    font-size: 200%;
+    color: black;
+}
+
+.popup h2 {
+    font-size: 200%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    color: black;
+}
+
+.popup h3 {
+    font-size: 200%;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    color: black;
+} */
