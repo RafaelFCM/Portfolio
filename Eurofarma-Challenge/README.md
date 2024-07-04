@@ -52,13 +52,12 @@ Pretendemos dedicar os meses de junho e julho para o desenvolvimento do frontend
 desejado, dedicaremos os próximos meses até a entrega para o backend e integração com banco de dados.
 
 
-Modelo de banco de dados (diagrama):
+Banco de dados:
  
-![image](https://github.com/RafaelFCM/Portfolio/assets/100213402/33ba5adc-5d1a-4f0c-a826-8616aae285e8)
 
 <br/>
 <br/>
 
 ## Rodando
 
-Você pode ver ele rodando [aqui](https)
+
