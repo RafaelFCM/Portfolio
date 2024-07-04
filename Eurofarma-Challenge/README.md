@@ -53,7 +53,13 @@ desejado, dedicaremos os próximos meses até a entrega para o backend e integra
 
 
 Banco de dados:
- 
+Tabela users com os atributos: userId (PK), email, password
+Tabela profiles com os atributos: userId (PK, FK), name, certificateName, email, bio, birthDate, occupation, company, position, linkedin, twitter, github, customLink, course, institution, educationType, isCompleted, interests, personalityType, hasCompletedTest (default: 0)
+Tabela topics com os atributos: topicId (PK), name
+Tabela courses com os atributos: courseId (PK), title, description, imageUrl, instructors, duration, topicId (FK)
+Tabela lessons com os atributos: lessonsId (PK), courseId (FK), title, description, videoUrl
+Tabela user_courses com os atributos: userId (PK, FK), courseId (PK, FK), progress, status
+Tabela user_lessons com os atributos: userId (PK, FK), courseId (PK, FK), lessonId (PK, FK)
 
 <br/>
 <br/>
