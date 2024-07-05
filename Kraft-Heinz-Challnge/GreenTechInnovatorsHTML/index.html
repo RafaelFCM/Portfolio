@@ -18,6 +18,231 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
+    <style>
+        :root {
+            --yellow: #FBC201;
+            --red: #E31D1A;
+            --cream: #FEF6A8;
+            --dark-blue: #203663;
+            --light-blue: #8b9db9;
+            --fonte-titulo: 'Playfair Display', serif;
+            --fonte-texto: 'Poppins', sans-serif;
+        }
+
+        h1, h2 {
+            font-family: var(--fonte-titulo);
+        }
+
+        p {
+            font-family: var(--fonte-texto);
+        }
+
+        .introduction {
+            background-color: var(--light-blue);
+            color: #fff;
+        }
+
+        .context {
+            background-color: var(--cream);
+            color: #333;
+        }
+
+        .form {
+            background-color: var(--light-blue);
+            color: #fff;
+        }
+
+        .about-us {
+            background-color: var(--cream);
+            color: #333;
+        }
+
+        .form-label {
+            color: #fff;
+        }
+
+        .fa-brands {
+            color: black;
+        }
+
+        .btn-success {
+            background-color: var(--dark-blue);
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: var(--yellow);
+            color: #000;
+        }
+
+        .input-field input, .input-field select, .input-field textarea {
+            border-radius: 0;
+            border: 1px solid var(--yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container-fluid introduction pt-5 pb-5">
+        <div class="container intro">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h1>GreenTech Innovators e Kraft-Heinz</h1>
+                </div>
+                <div class="col-12 col-lg-6 text-center pb-5">
+                    <img src="./images/grafico.jpg" class="img-fluid rounded" alt="Grafico">
+                </div>
+                <div class="col-12 col-lg-6 text-center fs-5">
+                    <p>Esse sistema é usado para armazenar e manipular informações, críticas, avaliações e colaborações de você, cliente, para ajudar a empresa a criar estratégias de melhorias e inovação. A empresa precisa compreender o mercado, consumidores, tendências a favor da temática ESG.</p>
+                    <p>Depois essas informações serão usadas na geração de consultas, relatórios e insights que favorecem a empresa, a experiência do cliente e o planeta Terra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid context pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h1>Kraft-Heinz e o ESG</h1>
+                </div>
+                <div class="col-12 col-lg-6 text-center pb-5">
+                    <img src="./images/esg.png" class="img-fluid rounded" alt="ESG">
+                </div>
+                <div class="col-12 col-lg-6 text-center fs-5">
+                    <p>As Avaliações de Risco ESG medem a exposição de uma empresa a riscos ESG específicos do setor e quão bem uma empresa está gerenciando esses riscos.</p>
+                    <p>A exposição se refere à extensão em que uma empresa está exposta a diferentes questões ESG. Nossa pontuação de exposição leva em consideração fatores específicos do sub-setor e da empresa, como seu modelo de negócio. A Exposição da Kraft Heinz Co é Alta.</p>
+                    <p>A gestão se refere a quão bem uma empresa está gerenciando suas questões ESG relevantes. Nossa pontuação de gestão avalia a robustez dos programas, práticas e políticas ESG de uma empresa. A gestão é considerada Média.</p>
+                    <p>Sendo assim, nós queremos melhorar a gestão e dar mais atenção a essa problemática.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid form d-flex align-items-start justify-content-center pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5 mb-5">
+                    <h1>Conectando a Kraft-Heinz com seus clientes</h1>
+                    <h2>Melhorando o seu atendimento</h2>
+                </div>
+                <form id="dados" name="dados" method="post" action="">
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" maxlength="20" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="sobrenome" class="form-label">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Sobrenome" maxlength="30" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" minlength="6" maxlength="20" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="col-12 col-lg-6 input-field">
+                            <label for="ocupation" class="form-label">Assunto</label>
+                            <select name="ocupation" id="ocupation" class="form-select">
+                                <option value="" disabled selected>Assunto</option>
+                                <option value="Sustentabilidade">Sustentabilidade</option>
+                                <option value="Governança">Governança</option>
+                                <option value="Social">Social</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-6 input-field">
+                            <label for="celular" class="form-label">Celular</label>
+                            <input type="tel" id="celular" name="celular" pattern="[0-9]{11}" class="form-control" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="rua" class="form-label">Rua</label>
+                            <input type="text" id="rua" name="rua" class="form-control" placeholder="Rua" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="numero" class="form-label">Número da rua</label>
+                            <input type="text" id="numero" name="numero" class="form-control" placeholder="Número da rua" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="complemento" class="form-label">Complemento</label>
+                            <input type="text" id="complemento" name="complemento" class="form-control" placeholder="Complemento">
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="bairro" class="form-label">Bairro</label>
+                            <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Bairro" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="text" id="cep" name="cep" pattern="[0-9]{8}" class="form-control" placeholder="CEP" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="estado" class="form-label">Estado</label>
+                            <input type="text" id="estado" name="estado" class="form-control" placeholder="Estado" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade" required>
+                        </div>
+                        <div class="col-12 col-lg-4 input-field">
+                            <label for="pais" class="form-label">País</label>
+                            <input type="text" id="pais" name="pais" class="form-control" placeholder="País" required>
+                        </div>
+                        <div class="col-12 input-field">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="5" class="form-control" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <div class="col-12 input-field">
+                            <button type="submit" class="btn btn-success mt-3">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 GreenTech Innovators. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzO+eD7z4Id3yM1uJImnK44l5HU+IMrqs2X7fU24pMlF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-IVtZf0Pmn1yE+l/69j2VRHjflRkQ6KZufHIdaIU6M1F/nfL0CZ0WsCkpQH5k6xdi"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Innovators</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,7 +253,6 @@
                 <div class="col-12 text-center mb-5 fs-1">
                     <h1 class="fs-1">GreenTech Innovators e Kraft-Heinz</h1>
                 </div>
-                <!-- <div class="col-12 d-flex text-center align-items-center justify-content-center mt-5"> -->
                     <div class="col-12 col-lg-6 text-center pb-5">
                         <img src="./images/grafico.jpg" class="col-10" alt="">
                     </div>
@@ -36,7 +260,6 @@
                         <p>Esse sistema é usado para armazenar e manipular informações, críticas, avaliações e colaborações de você, cliente, para ajudar a empresa a criar estratégias de melhorias e inovação. A empresa precisa compreender o mercado, consumidores, tendências a favor da temática ESG.</p>
                         <p>Depois essas informações serão usadas na geração de consultas, relatórios e insights que favorecem a empresa, a experiência do cliente e o planeta Terra.</p>
                     </div>
-                <!-- </div> -->
             </div>
         </div>
     </section>
@@ -46,7 +269,6 @@
             <div class="col-12 text-center mb-5 fs-1">
                 <h1>Kraft-Heinz e o ESG</h1>
             </div>
-            <!-- <div class="col-12 mt-5"> -->
                 <div class="col-12 col-lg-6 text-center pb-5">
                     <img src="./images/esg.png" class="col-8" alt="">
                 </div>
@@ -56,7 +278,6 @@
                     <p>A gestão se refere a quão bem uma empresa está gerenciando suas questões ESG relevantes. Nossa pontuação de gestão avalia a robustez dos programas, práticas e políticas ESG de uma empresa. A gestão é considerada Média.</p>
                     <p>Sendo assim, nós queremos melhorar a gestão e dar mais atenção a essa problemática.</p>
                 </div>
-            <!-- </div> -->
         </div>
     </section>
 
@@ -171,7 +392,6 @@
     </section>
 
     <section class="container-fluid about-us">
-        <!-- <div class="container d-flex align-items-center justify-content-center pt-5 "> -->
             <div class="row">
                 <div class="heinz fs-4 col-6">
                     <h2>Kraft-Heinz</h2>
@@ -203,9 +423,8 @@
                     <i class="fa-brands fa-facebook fs-2"></i>
                 </div>
             </div>
-        <!-- </div> -->
     </section>
 
     <script src="https://kit.fontawesome.com/1ebd5955d5.js" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> -->
