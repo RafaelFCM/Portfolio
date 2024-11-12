@@ -49,4 +49,4 @@ Modelo de banco de dados (diagrama):
 
 ## Rodando
 
-Você pode ver ele rodando [aqui](https)
+Você pode ver ele rodando [aqui](https://www.youtube.com/watch?v=cwZ-LY_ilM8)
